@@ -1,0 +1,141 @@
+/* GENERAL SETTINGS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: #f4f6fb;
+    color: #222;
+}
+
+/* LOGIN PAGE */
+.login-container {
+    width: 380px;
+    margin: 100px auto;
+    padding: 35px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.login-container h1 {
+    color: #273c75;
+    margin-bottom: 10px;
+}
+
+.login-container p {
+    color: #777;
+    margin-bottom: 25px;
+}
+
+input {
+    width: 100%;
+    padding: 13px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #273c75;
+}
+
+button {
+    width: 100%;
+    padding: 13px;
+    background: #273c75;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #192a56;
+}
+
+/* DASHBOARD */
+.sidebar {
+    width: 240px;
+    height: 100vh;
+    background: #192a56;
+    color: white;
+    position: fixed;
+    padding: 25px;
+}
+
+.sidebar h2 {
+    margin-bottom: 35px;
+}
+
+.sidebar a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px 10px;
+    border-radius: 8px;
+}
+
+.sidebar a:hover {
+    background: #273c75;
+}
+
+.main-content {
+    margin-left: 240px;
+    padding: 35px;
+}
+
+.header {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.06);
+}
+
+.card h3 {
+    color: #273c75;
+    margin-bottom: 12px;
+}
+
+.card p {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* MOBILE RESPONSIVE */
+@media(max-width: 600px) {
+    .login-container {
+        width: 90%;
+        margin: 60px auto;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .main-content {
+        margin-left: 0;
+        padding: 15px;
+    }
+}
